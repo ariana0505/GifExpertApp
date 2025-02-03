@@ -19,7 +19,7 @@ export const GifGrid = ({category}) => {
     <ol>
           {
             images.map(({url,id}) =>
-              <img src={url} key={id} />
+              <img src={url} key={id}/>
             )
 
           }
