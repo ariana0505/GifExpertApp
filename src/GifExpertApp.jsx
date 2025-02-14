@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import {AddCategory} from "./componentes/AddCategory";
-import { GifGrid } from './componentes/GifGrid';
+import {AddCategory} from "./component/AddCategory";
+import { GifGrid } from './component/GifGrid';
 export const GifExpertApp = () => {
 
   const [categories, setCategorie] = useState(['One push', 'Dragon Ball',])
@@ -20,7 +20,7 @@ export const GifExpertApp = () => {
       onNewCategory ={ (value) => onAddCategory(value)}
     />
     {/* Listado de Gif */}
-  
+    {/* el key es para que react sepa que elemento se esta modificando */}
     <ol>
       {
         categories.map(category => <GifGrid
